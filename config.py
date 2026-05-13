@@ -9,3 +9,6 @@ KNOWLEDGE_BASE_DIR = BASE_DIR / "knowledge"
 TRAVEL_AGENCY_POLICY_FILE = KNOWLEDGE_BASE_DIR / "travel_policy.txt"
 MODEL_FILE_NAME=getenv("MODEL_FILE_NAME", "travel_agency_policy.joblib")
 CACHE_TTL_SECONDS = int(getenv("CACHE_TTL_SECONDS", 3600))
+EMBED_MODEL_NAME = getenv("EMBED_MODEL_NAME", "nomic-embed-text")
+EMBED_URL = getenv("EMBED_URL", "http://localhost:11434/api/embeddings")
+EMBED_THRESHOLD = float(getenv("EMBED_THRESHOLD", 0.65))
